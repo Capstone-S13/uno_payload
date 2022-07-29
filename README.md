@@ -21,7 +21,7 @@ The IP address of the server is the IP address of the ROS computer and the IP ad
 # Launch
 ``` 
 roslaunch rosserial_server socket.launch
-rosrun payload_action payload_action_server
+rosrun payload_action payload_action_server.py
 ```
 
 # Calling the Action
@@ -35,7 +35,7 @@ PayLoadMode pusher_state
 bool success
 ```
 
-The payload can be controlled to the deposit or collection state by sending the action goal,
+The payload can be controlled to the deposit or collection state by sending the action goal:
 - 0: Deposit or up state
 - 1: Collect or down state
 - 2: Idle state (usually not used)
